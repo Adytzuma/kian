@@ -4,6 +4,7 @@ from discord.ext import commands
 import logging
 import random
 from typing import Union
+import os
 #===========================DEFINING===================
 desc = f"""I am kian_8x's Bot! Made by Adytzu96#3030 to keep the server safe and sound"""
 bot = commands.Bot(case_insensitive=True, command_prefix='!?', description=desc)
@@ -81,4 +82,4 @@ async def on_member_remove(member):
 
 
 #==============================WHY=ARE=YOU=LOOKING=AT=THIS============
-bot.run('NDgyNDMwMDY2MTQwMjUwMTQy.DmEyMA.TZmMiRAWjZPc28HTS_iJyP3sukk')
+bot.run(os.getenv("TOKEN"))
